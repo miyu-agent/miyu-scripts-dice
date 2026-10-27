@@ -1,0 +1,6 @@
+[package]
+version = "0.1.0"
+name = { en = "Dice", zh = "掷骰子" }
+summary = { en = "Roll dice in dice notation: 3d6+2, 2d20kh1, 4d6dl1", zh = "照 3d6+2、2d20kh1 这样的写法掷骰子" }
+author = "SHORiN-KiWATA"
+icon = "gamepad-2"
