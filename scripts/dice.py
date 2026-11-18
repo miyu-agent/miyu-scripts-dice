@@ -4,7 +4,6 @@
 # Description: Roll dice written in dice notation, such as 1d6, 3d6+2, 2d20kh1 or 4d6dl1, and return every face and the total.
 # 描述：掷骰子：照 3d6+2、2d20kh1 这样的写法掷，交回每一颗和总数。
 # Timeout: 10
-# Need load: no
 # Clicall: yes
 # Parameters:
 # {"type": "object", "properties": {
