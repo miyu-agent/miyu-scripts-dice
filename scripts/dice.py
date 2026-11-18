@@ -99,8 +99,12 @@ def main():
         args = json.load(sys.stdin)
     except json.JSONDecodeError as exc:
         fail(f"参数不是 JSON：{exc}")
+    if not isinstance(args, dict):
+        fail("参数要是一个 JSON 对象")
     dice = str(args.get("dice") or "1d6")
-    repeat = args.get("repeat") or 1
+    repeat = args.get("repeat")
+    if repeat is None:
+        repeat = 1
     if not isinstance(repeat, int) or not 1 <= repeat <= MAX_REPEAT:
         fail(f"repeat 要是 1 到 {MAX_REPEAT} 的整数")
     terms = parse(dice)
